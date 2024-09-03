@@ -114,7 +114,7 @@ export default function Projectid() {
 
     switch (selectedPackage) {
       case 'Silver':
-        newAmount += 150;
+        newAmount += 0;
         setShowGoogleMapModal(true); // Show modal for hotel selection
         break;
       case 'Gold':
@@ -196,7 +196,7 @@ const handleBooking = async () => {
   let packageAmount = 0;
   switch (selectedPackage) {
     case 'Silver':
-      packageAmount = 150;
+      packageAmount = 0;
       break;
     case 'Gold':
       packageAmount = 170;
@@ -385,13 +385,13 @@ const handleBooking = async () => {
                   className={`py-2 px-4 rounded ${selectedPackage === 'Silver' ? 'bg-rose-500 text-white font-semibold' : 'bg-gray-100 text-rose-700 font-semibold border border-dashed border-rose-500'}`}
                   onClick={() => handlePackageSelection('Silver')}
                 >
-                  Silver (GHS 150 + Hotel Fee)
+                  Silver (Hotel Fee)
                 </button>
                 <button
                   className={`py-2 px-4 rounded ${selectedPackage === 'Gold' ? 'bg-rose-500 text-white font-semibold' : 'bg-gray-100 text-rose-700 font-semibold border border-dashed border-rose-500'}`}
                   onClick={() => handlePackageSelection('Gold')}
                 >
-                  Gold (GHS 170 + Hotel Fee)
+                  Gold (Transport GHS 170 + Hotel Fee)
                 </button>
               </div>
              
@@ -408,7 +408,7 @@ const handleBooking = async () => {
                   Event Package Cost:
                 </i>
                 <i className="font-bold text-gray-900">
-                  {/* selectedPackage === 'Gold' ? 'GHS170' : */ selectedPackage === 'Silver' ? 'GHS150' : selectedPackage === 'Bronze' ? 'GHS100' : 'GHS0'}
+                  {/* selectedPackage === 'Gold' ? 'GHS170' : */ selectedPackage === 'Silver' ? 'GHS0' : selectedPackage === 'Bronze' ? 'GHS100' : 'GHS0'}
                 </i>
               </div>
 
