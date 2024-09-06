@@ -25,6 +25,7 @@ const Events = () => {
     fetchEvents();
   };
 
+  /*
   const fetchEvents = async () => {
     setLoading(true);
     try {
@@ -58,6 +59,45 @@ const Events = () => {
       setLoading(false);
     }
   };
+  */
+
+  const fetchEvents = async () => {
+    setLoading(true);
+    try {
+      const eventsRef = collection(db, 'events');
+      const querySnapshot = await getDocs(eventsRef);
+      let eventsList = [];
+  
+      querySnapshot.forEach((doc) => {
+        const eventData = doc.data();
+        const eventStartDate = new Date(eventData.startDate.seconds * 1000 || eventData.startDate);
+        const eventDeadline = new Date(eventData.deadline.seconds * 1000 || eventData.deadline);
+        const checkInDate = moment(startDate);
+        const checkOutDate = moment(endDate);
+  
+        // Check if there's any overlap between the user's date range and the event's date range
+        const isEventInRange = 
+          moment(eventStartDate).isBefore(checkOutDate) && moment(eventDeadline).isAfter(checkInDate);
+  
+        if (
+          isEventInRange &&
+          (!location || eventData.location.toLowerCase() === location.toLowerCase()) &&
+          (selectedCategory === 'all' || eventData.category === selectedCategory)
+        ) {
+          eventsList.push({ id: doc.id, ...eventData });
+        }
+      });
+  
+      eventsList = eventsList.sort(() => 0.5 - Math.random());
+      setTotalPages(Math.ceil(eventsList.length / eventsPerPage));
+      setEvents(eventsList);
+    } catch (error) {
+      console.error('Error fetching events:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+  
 
   useEffect(() => {
     if (startDate && endDate) {
