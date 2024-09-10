@@ -12,7 +12,7 @@ export default function SiteAboutUs() {
       <header className="bg-gradient-to-r from-green-600 to-green-400 py-16 mb-12">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-extrabold text-white">
-            About Intellitrip
+            About INTELLITOURGH
           </h1>
           <p className="mt-4 text-xl text-gray-200">
             Discover who we are, what we do, and why we do it.
@@ -26,7 +26,7 @@ export default function SiteAboutUs() {
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
               <p className="text-lg leading-relaxed">
-                At Intellitrip, our mission is to connect people with the rich cultural heritage of Ghana by making local events and festivals accessible to everyone. We strive to provide an easy-to-use platform where users can discover, book, and experience the best that Ghana has to offer.
+                At Intellitourgh, our mission is to connect people with the rich cultural heritage of Ghana by making local events and festivals accessible to everyone. We strive to provide an easy-to-use platform where users can discover, book, and experience the best that Ghana has to offer.
               </p>
             </div>
             <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
@@ -76,7 +76,7 @@ export default function SiteAboutUs() {
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Looking Forward</h3>
               <p className="text-lg leading-relaxed">
-                As we look to the future, we remain committed to our mission and vision. We will continue to innovate and improve, ensuring that Intellitrip remains the go-to platform for local events and festival bookings in Ghana.
+                As we look to the future, we remain committed to our mission and vision. We will continue to innovate and improve, ensuring that Intellitourgh remains the go-to platform for local events and festival bookings in Ghana.
               </p>
             </div>
           </div>
@@ -88,19 +88,19 @@ export default function SiteAboutUs() {
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">John Doe</h3>
               <p className="text-lg leading-relaxed">
-                <span className="font-bold">Founder & CEO:</span> John is the visionary behind Intellitrip, with a deep love for Ghana’s culture and a passion for technology. He leads the team with a focus on innovation and customer satisfaction.
+                <span className="font-bold">Founder & CEO:</span> John is the visionary behind Intellitourgh, with a deep love for Ghana’s culture and a passion for technology. He leads the team with a focus on innovation and customer satisfaction.
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Jane Smith</h3>
               <p className="text-lg leading-relaxed">
-                <span className="font-bold">Head of Marketing:</span> Jane is responsible for getting the word out about Intellitrip. With a background in digital marketing, she ensures that our platform reaches the right audience.
+                <span className="font-bold">Head of Marketing:</span> Jane is responsible for getting the word out about Intellitourgh. With a background in digital marketing, she ensures that our platform reaches the right audience.
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Michael Brown</h3>
               <p className="text-lg leading-relaxed">
-                <span className="font-bold">CTO:</span> Michael oversees the technical aspects of Intellitrip, ensuring that our platform is secure, reliable, and user-friendly. He brings years of experience in software development to the team.
+                <span className="font-bold">CTO:</span> Michael oversees the technical aspects of Intellitourgh, ensuring that our platform is secure, reliable, and user-friendly. He brings years of experience in software development to the team.
               </p>
             </div>
           </div>
@@ -113,9 +113,9 @@ export default function SiteAboutUs() {
               We love hearing from our users! Whether you have a question, feedback, or just want to say hello, feel free to reach out to us at:
             </p>
             <address className="mt-4 not-italic">
-              Intellitrip<br />
+              Intellitourgh<br />
               Accra, Ghana<br />
-              Email: <a href="mailto:support@intellitrip.vercel.app" className="text-green-500 hover:underline">support@intellitrip.vercel.app</a>
+              Email: <a href="mailto:support@intellitourgh.vercel.app" className="text-green-500 hover:underline">support@intellitourgh.vercel.app</a>
             </address>
           </div>
         </section>
@@ -123,7 +123,7 @@ export default function SiteAboutUs() {
 
       <footer className="text-center mt-12 py-8 bg-gray-200 dark:bg-gray-800">
         <p className="text-lg leading-relaxed">
-          &copy; {new Date().getFullYear()} Intellitrip. All rights reserved.
+          &copy; {new Date().getFullYear()} Intellitourgh. All rights reserved.
         </p>
       </footer>
     </div>

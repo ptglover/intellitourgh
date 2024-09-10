@@ -142,7 +142,7 @@ const SitePrivacy = () => {
             <address className="mt-4 not-italic">
               Ghana Local Events Booking<br />
               Accra, Ghana<br />
-              Email: <a href="mailto:support@intellitrip.vercel.app" className="text-blue-500 hover:underline">support@intellitrip.vercel.app</a>
+              Email: <a href="mailto:support@intellitourgh.vercel.app" className="text-blue-500 hover:underline">support@intellitourgh.vercel.app</a>
             </address>
           </div>
         </section>
@@ -150,7 +150,7 @@ const SitePrivacy = () => {
 
       <footer className="text-center mt-12">
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} Intellitrip. All rights reserved.
+          © {new Date().getFullYear()} intellitourgh. All rights reserved.
         </p>
       </footer>
     </div>
