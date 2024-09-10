@@ -56,7 +56,7 @@ export function ExploreCourses({ filters, sortOption }) {
   const [projects, setProjects] = useState([]);
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(6);
+  const [itemsPerPage] = useState(58);
 
   useEffect(() => {
     const fetchProjects = async () => {

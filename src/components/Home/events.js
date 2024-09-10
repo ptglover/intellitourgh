@@ -38,7 +38,7 @@ export function Events({ filters, sortOption }) {
   const [projects, setProjects] = useState([]);
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(6);
+  const [itemsPerPage] = useState(4);
 
   useEffect(() => {
     const fetchProjects = async () => {
