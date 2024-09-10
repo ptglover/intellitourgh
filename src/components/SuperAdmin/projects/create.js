@@ -177,7 +177,7 @@ const Create = () => {
   return (
 <div class="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
   <form onSubmit={addProject}>
-    <div class="bg-white rounded-xl shadow dark:bg-neutral-900">
+    <div class="bg-white rounded-xl shadow ">
       <div class="relative h-40 rounded-t-xl bg-[url('https://preline.co/assets/svg/examples/abstract-bg-1.svg')] bg-no-repeat bg-cover bg-center">
         {/*
         <div class="absolute top-0 end-0 p-4">
@@ -214,11 +214,11 @@ const Create = () => {
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Event Title
             </label>
 
-            <input id="af-submit-app-project-name" value={title} onChange={(e) => setTitle(e.target.value)} required type="text" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Enter event title"/>
+            <input id="af-submit-app-project-name" value={title} onChange={(e) => setTitle(e.target.value)} required type="text" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Enter event title"/>
           </div>
 {/*
           <div class="space-y-2">
@@ -328,11 +328,11 @@ const Create = () => {
 )}
 
           <div class="space-y-2">
-            <label for="af-submit-app-category" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-category" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Category
             </label>
 
-            <select id="af-submit-app-category" value={category} onChange={(e) => setCategory(e.target.value)} required class="py-2 px-3 pe-9 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
+            <select id="af-submit-app-category" value={category} onChange={(e) => setCategory(e.target.value)} required class="py-2 px-3 pe-9 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none ">
               <option selected>Select a category</option>
               <option value="Festival">Festival</option>
               <option value="Tourist Site">Tourist Site</option>
@@ -341,70 +341,70 @@ const Create = () => {
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-description" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-description" class="inline-block text-sm font-medium text-gray-800 mt-2.5">
               Description
             </label>
 
-            <textarea id="af-submit-app-description" value={description} onChange={(e) => setDescription(e.target.value)} required class="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" rows="6" placeholder="A detailed summary will better explain your products to the audiences. Our users will see this in your dedicated product page."></textarea>
+            <textarea id="af-submit-app-description" value={description} onChange={(e) => setDescription(e.target.value)} required class="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none " rows="6" placeholder="A detailed summary will better explain your products to the audiences. Our users will see this in your dedicated product page."></textarea>
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5">
               Event Price
             </label>
 
             <input id="af-submit-app-project-name"  value={goal} onChange={(e) => setGoal(e.target.value)} required type="number" 
-            class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+            class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
              placeholder="The total amount for the event."/>
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Event Bus/Flight Pickup Point
             </label>
 
             <input id="af-submit-app-project-name"  value={eventPickupLocation} onChange={(e) => setEventPickupLocation(e.target.value)} required type="text" 
-            class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+            class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
              placeholder="The location to pick up tourist for the event."/>
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Start Date
             </label>
 
-            <input id="af-submit-app-project-name" value={startDate} onChange={(e) => setStartDate(e.target.value)} required type="date" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="The end date for the event."/>
+            <input id="af-submit-app-project-name" value={startDate} onChange={(e) => setStartDate(e.target.value)} required type="date" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="The end date for the event."/>
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Deadline
             </label>
 
-            <input id="af-submit-app-project-name" value={deadline} onChange={(e) => setDeadline(e.target.value)} required type="date" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="The end date for the event."/>
+            <input id="af-submit-app-project-name" value={deadline} onChange={(e) => setDeadline(e.target.value)} required type="date" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="The end date for the event."/>
           </div>
           
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
             FAQs
             </label>
-            <textarea id="af-submit-app-description" value={faqs} onChange={(e) => setFaqs(e.target.value)} required class="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" rows="6" placeholder="Frequently Asked Questions to address common queries from potential backers."></textarea>
+            <textarea id="af-submit-app-description" value={faqs} onChange={(e) => setFaqs(e.target.value)} required class="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" rows="6" placeholder="Frequently Asked Questions to address common queries from potential backers."></textarea>
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Location
             </label>
 
-            <input id="af-submit-app-project-name" value={location} onChange={(e) => setLocation(e.target.value)} required type="text" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="The geographical location where the project is based or where the funds will be utilized."/>
+            <input id="af-submit-app-project-name" value={location} onChange={(e) => setLocation(e.target.value)} required type="text" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="The geographical location where the project is based or where the funds will be utilized."/>
           </div>
 
           <div class="space-y-2">
-            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-neutral-200">
+            <label for="af-submit-app-project-name" class="inline-block text-sm font-medium text-gray-800 mt-2.5 ">
               Social Media Links
             </label>
 
-            <textarea id="af-submit-app-project-name" value={socialLinks} onChange={(e) => setSocialLinks(e.target.value)} required type="text" class="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" rows="6" placeholder="Links to the project's social media profiles to engage with the community and provide updates."></textarea>
+            <textarea id="af-submit-app-project-name" value={socialLinks} onChange={(e) => setSocialLinks(e.target.value)} required type="text" class="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" rows="6" placeholder="Links to the project's social media profiles to engage with the community and provide updates."></textarea>
           </div>
 {/*
           <div class="space-y-2">
