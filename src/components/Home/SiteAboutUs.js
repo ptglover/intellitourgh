@@ -64,7 +64,7 @@ export default function SiteAboutUs() {
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Humble Beginnings</h3>
               <p className="text-lg leading-relaxed">
-                Intellitrip started as a small project driven by a passion for connecting people with Ghana’s cultural events. With hard work and dedication, we’ve grown into a trusted platform that serves thousands of users.
+                Intellitourgh started as a small project driven by a passion for connecting people with Ghana’s cultural events. With hard work and dedication, we’ve grown into a trusted platform that serves thousands of users.
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
@@ -86,21 +86,21 @@ export default function SiteAboutUs() {
           <h2 className="text-3xl font-bold mb-6">Meet the Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4">John Doe</h3>
+              <h3 className="text-xl font-semibold mb-4">Perry Glover</h3>
               <p className="text-lg leading-relaxed">
-                <span className="font-bold">Founder & CEO:</span> John is the visionary behind Intellitourgh, with a deep love for Ghana’s culture and a passion for technology. He leads the team with a focus on innovation and customer satisfaction.
+                <span className="font-bold"></span> 
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4">Jane Smith</h3>
+              <h3 className="text-xl font-semibold mb-4">Kelvin Sai</h3>
               <p className="text-lg leading-relaxed">
-                <span className="font-bold">Head of Marketing:</span> Jane is responsible for getting the word out about Intellitourgh. With a background in digital marketing, she ensures that our platform reaches the right audience.
+                <span className="font-bold"></span> 
               </p>
             </div>
             <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold mb-4">Michael Brown</h3>
+              <h3 className="text-xl font-semibold mb-4">Evans Tsekpo</h3>
               <p className="text-lg leading-relaxed">
-                <span className="font-bold">CTO:</span> Michael oversees the technical aspects of Intellitourgh, ensuring that our platform is secure, reliable, and user-friendly. He brings years of experience in software development to the team.
+                <span className="font-bold"></span> 
               </p>
             </div>
           </div>

@@ -17,7 +17,7 @@ const Events = () => {
   const [hasSearched, setHasSearched] = useState(false);
 
   const categories = ['all', 'Festival', 'Local Event', 'Tourist Site'];
-  const eventsPerPage = 9;
+  const eventsPerPage = 20;
 
   const handleSearch = () => {
     setCurrentPage(1);
