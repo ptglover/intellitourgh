@@ -13,17 +13,17 @@ import StatsCard from "./stats-card";
 const STATS = [
   {
     icon: DocumentTextIcon,
-    count: "10+",
+    count: "30+",
     title: "Festivals",
   },
   {
     icon: PlayCircleIcon,
-    count: "15+",
+    count: "10+",
     title: "Local Events",
   },
   {
     icon: PencilSquareIcon,
-    count: "11+",
+    count: "30+",
     title: "Tourist Sites",
   },
   {
