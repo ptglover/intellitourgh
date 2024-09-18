@@ -16,6 +16,7 @@ const ProjectModal = ({ project, isOpen, closeModal }) => {
   const [addedByImage, setAddedByImage] = useState('/images/defaultuser.jpg')
   const [image, setImage] = useState('/images/defaultuser.jpg')
   const [rewards, setRewards] = useState('');
+  const [socialLinks, setSocialLinks] = useState('');
 
   useEffect(() => {
     if (project) {
@@ -30,6 +31,7 @@ const ProjectModal = ({ project, isOpen, closeModal }) => {
       setAddedByImage(project.addedByImage || '/images/defaultuser.jpg')
       setImage(project.image || '/images/defaultuser.jpg')
       setRewards(project.rewards || '');
+      setSocialLinks(project.socialLinks || '');
     }
   }, [project]);
 
@@ -45,6 +47,7 @@ const ProjectModal = ({ project, isOpen, closeModal }) => {
         location,
         faqs,
         rewards,
+        socialLinks,
         status,
       });
       toast.success('Project Updated Successfully')
@@ -99,6 +102,10 @@ const ProjectModal = ({ project, isOpen, closeModal }) => {
             <label className='block text-sm font-medium'>Location</label>
             <input type='text' className='w-full border rounded p-2' value={location} onChange={(e) => setLocation(e.target.value)} />
           </div>
+          <div>
+            <label className='block text-sm font-medium'>Social Link (Just One - Do not include https://)</label>
+            <input type='text' className='w-full border rounded p-2' value={socialLinks} onChange={(e) => setSocialLinks(e.target.value)} />
+          </div> 
           <div>
             <label className='block text-sm font-medium'>FAQs</label>
             <textarea className='w-full border rounded p-2' value={faqs} onChange={(e) => setFaqs(e.target.value)}></textarea>

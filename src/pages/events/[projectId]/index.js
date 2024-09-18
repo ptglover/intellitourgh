@@ -17,6 +17,7 @@ import { db } from '../../../firebase.config';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { BsGift } from "react-icons/bs";
 import GoogleMapModal from '../../../components/events/GoogleMapModal'; // Import GoogleMapModal component
+import Link from "next/link";
 
 export default function Projectid() {
   const router = useRouter();
@@ -329,12 +330,27 @@ const handleBooking = async () => {
             </div>
               */}
             <div className="divider"></div>
-            <div>
-              <div className="mt-5 flex font-semibold">
-                <span className="p-1"><RiShareBoxLine /></span> <span>Social Links</span>
-              </div>
-              <p className="my-1">{project.socialLinks}</p>
-            </div>
+            <div className="mt-5 flex items-center font-semibold text-gray-700">
+        <RiShareBoxLine className="text-lg" />
+        <span className="ml-2">Social Links</span>
+      </div>
+      <div className="my-2 text-center">
+        {project.socialLinks ? (
+          <div className="p-2 border bg-rose-400 text-white font-semibold text-center mx-5 flex justify-center items-center">
+          <a 
+            href={`https://${project.socialLinks}`} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center  hover:text-blue-800"
+          >
+            <RiShareBoxLine className="mr-1 text-lg" />
+            Click to visit
+          </a>
+          </div>
+        ) : (
+          <p className="text-gray-500">No social link provided</p>
+        )}
+      </div>
             
             <div>
               <div className="mt-5 flex font-semibold">
