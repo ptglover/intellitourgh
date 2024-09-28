@@ -21,26 +21,26 @@ const CATEGORIES = [
   {
     img: "https://media.femalemag.com.sg/public/2016/07/sziget.jpg",
     icon: HeartIcon,
-    title: "Summer Music Festival",
-    desc: "300 Events",
+    title: "December Music Festivals",
+    desc: "10+ Events",
   },
   {
     img: "https://www.washingtonian.com/wp-content/uploads/2016/11/NPR-ACC.jpg",
     icon: PuzzlePieceIcon,
     title: "Local Craft Fair",
-    desc: "200 Events",
+    desc: "10+ Events",
   },
   {
     img: "https://foodandroad.com/wp-content/uploads/2021/04/free-walking-tour-group-meeting-point-2.jpg",
     icon: GlobeEuropeAfricaIcon,
-    title: "Historic Walking Tour",
-    desc: "240 Events",
+    title: "Traditional Festivals",
+    desc: "30+ Events",
   },
   {
     img: "https://jacksonvillefreepress.com/wp-content/uploads/2024/07/VLFWF_Bar-Fight_Photo-Credit_-Visit-Lauderdale-Food-Wine-Festival_2024-678x381.jpeg",
     icon: MicrophoneIcon,
     title: "Annual Food & Wine Expo",
-    desc: "100 Events",
+    desc: "10+ Events",
   },
 ];
 

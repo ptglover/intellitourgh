@@ -124,7 +124,7 @@ export function ExploreCourses({ filters, sortOption }) {
           variant="lead"
           className="mt-2 mx-auto w-full px-4 !text-gray-500 lg:w-6/12 lg:px-8"
         >
-          Experience top events: vibrant festivals, unique local fairs, historical tours, and exciting food & wine expos.
+          Experience top events: vibrant festivals, unique local fairs, historical tours, and exciting music events.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-24 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-14">
